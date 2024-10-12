@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main  # Change this to your branch name if needed
-
+    paths:
+      - terraform/**
+   
 jobs:
   terraform:
     runs-on: ubuntu-latest
