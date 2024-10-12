@@ -1,9 +1,10 @@
 name: "Terraform Infrastructure Change Management Pipeline with GitHub Actions"
  
 on:
- push:
-   branches:
-   - main
+  push:
+    branches:
+      - main
+  workflow_dispatch: null
    paths:
    - terraform/**
  pull_request:
